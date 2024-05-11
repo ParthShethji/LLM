@@ -33,7 +33,7 @@ This is where sentence embeddings come into play  it associates every sentence w
 
 ## Attention Mechanism
 
-### Simple attention
+### attention
 words that have more than one definition, it assigns the same vector to all the definitions What if you want to use this word in different contexts?
 
 One Word, Multiple Meanings
@@ -50,5 +50,6 @@ In these two sentences, the computer now knows a little more about the context o
 
 But how does it understand thet we must focus on river or money only it like gravity the nearer the word is to our target it gets pulled most nearest word
 
-### Multihead Attention  
+### Attention  Mechanism
 instead of using one embedding we create muliple embeddings using linear tranformation of those vertices and the take out the most good embedding
+
