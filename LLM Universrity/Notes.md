@@ -42,7 +42,7 @@ Sentence 2: Money in the bank.
 In these two sentences, the computer now knows a little more about the context of the word “bank”, as the word has been split into two distinct ones. One whose definition is closer to “river”, and another one whose definition is closer to “money”. That, in short, is how attention mechanisms work
 
 
-![changed image text]("https://files.readme.io/c2889ad-image.png")
+![alt text](image-2.png)
 ![alt text](image.png)
 
 
