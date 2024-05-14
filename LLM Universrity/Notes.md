@@ -49,11 +49,11 @@ In these two sentences, the computer now knows a little more about the context o
 ![alt text](image.png)
 ![alt text](image-1.png)
 
-But how does it understand thet we must focus on river or money only it like gravity the nearer the word is to our target it gets pulled most nearest word
+But how does it understand that we must focus on river or money only it is like gravity the nearer the word is to our target, the more it gets pulled to nearest word
 
 ### Attention Mechanism
 
-instead of using one embedding we create muliple embeddings using linear tranformation of those vertices and the take out the most good embedding
+instead of using one embedding, we create multiple embeddings using a linear transformation of those vertices and take out the best embedding
 
 ![alt text](<Screenshot (13).png>)
 ![alt text](<Screenshot (83).png>)
@@ -73,7 +73,7 @@ instead of using one embedding we create muliple embeddings using linear tranfor
 ![alt text](<Screenshot (42).png>) 
 ![alt text](<Screenshot (44).png>)
 
-`We take a line from apple to orange then me move apple towards orange for 43 towards orange. Because apple is 43% of orange in our equation`
+`We take a line from apple to orange then I move apple towards orange for 43. Because apple is 43% of orange in our equation`
 
 ![alt text](<Screenshot (45).png>) 
 ![alt text](<Screenshot (46).png>) 
