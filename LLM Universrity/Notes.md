@@ -53,3 +53,11 @@ But how does it understand thet we must focus on river or money only it like gra
 ### Attention  Mechanism
 instead of using one embedding we create muliple embeddings using linear tranformation of those vertices and the take out the most good embedding
 
+
+
+## Transformer Model 
+It has ability to carry context which have been real challenge
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
