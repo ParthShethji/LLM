@@ -45,9 +45,9 @@ Sentence 2: Money in the bank.
 
 In these two sentences, the computer now knows a little more about the context of the word “bank”, as the word has been split into two distinct ones. One whose definition is closer to “river”, and another one whose definition is closer to “money”. That, in short, is how attention mechanisms work
 
-![alt text](image-2.png)
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](./images/image-2.png)
+![alt text](./images/image.png)
+![alt text](./images/image-1.png)
 
 But how does it understand that we must focus on river or money only it is like gravity the nearer the word is to our target, the more it gets pulled to nearest word
 
@@ -59,78 +59,78 @@ But how does it understand that we must focus on river or money only it is like 
 ## Transformer Model 
 It has ability to carry context which have been real challenge
 
-![alt text](image-3.png)
+![alt text](./images/image-3.png)
 
-![alt text](image-4.png)
+![alt text](./images/image-4.png)
 =======
 instead of using one embedding, we create multiple embeddings using a linear transformation of those vertices and take out the best embedding
 
-![alt text](<Screenshot (13).png>)
-![alt text](<Screenshot (83).png>)
-![alt text](<Screenshot (15).png>)
-![alt text](<Screenshot (16).png>)
+![alt text](<./images/Screenshot (13).png>)
+![alt text](<./images/Screenshot (83).png>)
+![alt text](<./images/Screenshot (15).png>)
+![alt text](<./images/Screenshot (16).png>)
 Distance is nothing but similarity between them
-![alt text](<Screenshot (21).png>) 
-![alt text](<Screenshot (22).png>) 
-![alt text](<Screenshot (24).png>) 
-![alt text](<Screenshot (25).png>) 
+![alt text](<./images/Screenshot (21).png>) 
+![alt text](<./images/Screenshot (22).png>) 
+![alt text](<./images/Screenshot (24).png>) 
+![alt text](<./images/Screenshot (25).png>) 
 Everything in real world is done using scaled dot product
 
-![alt text](<Screenshot (30).png>) 
-![alt text](<Screenshot (31).png>) 
-![alt text](<Screenshot (33).png>) 
-![alt text](<Screenshot (35).png>) 
-![alt text](<Screenshot (40).png>) 
-![alt text](<Screenshot (41).png>) 
-![alt text](<Screenshot (42).png>) 
-![alt text](<Screenshot (44).png>)
+![alt text](<./images/Screenshot (30).png>) 
+![alt text](<./images/Screenshot (31).png>) 
+![alt text](<./images/Screenshot (33).png>) 
+![alt text](<./images/Screenshot (35).png>) 
+![alt text](<./images/Screenshot (40).png>) 
+![alt text](<./images/Screenshot (41).png>) 
+![alt text](<./images/Screenshot (42).png>) 
+![alt text](<./images/Screenshot (44).png>)
 
 `We take a line from apple to orange then I move apple towards orange for 43. Because apple is 43% of orange in our equation`
 
 ### Keys Values and Queries as linear Transformations
-![alt text](<Screenshot (45).png>) 
-![alt text](<Screenshot (46).png>) 
+![alt text](<./images/Screenshot (45).png>) 
+![alt text](<./images/Screenshot (46).png>) 
 `Queries:  the word (or token) for which we want to find relevant information from other words. here fruit`
 
 `Keys:  These represent the other words (or tokens) that the model will use to provide relevant information. here phone`
 
 the above can be used interchangebly
 
-`Values: Values are the actual information that will be retrieved based on the similarity between the query and the keys.` after applying values matrix to the best linearly transformed image it helps us find next wordz
+`Values: Values are the actual information that will be retrieved based on the similarity between the query and the keys.` after applying values matrix to the best linearly transformed ./images/image it helps us find next wordz
 
-![alt text](<Screenshot (48).png>)
-![alt text](<Screenshot (49).png>) 
-![alt text](<Screenshot (51).png>)
+![alt text](<./images/Screenshot (48).png>)
+![alt text](<./images/Screenshot (49).png>) 
+![alt text](<./images/Screenshot (51).png>)
 `keys and queries matrix multiplication: Used to find the linear transformation. `
 
-![alt text](<Screenshot (52).png>) 
-![alt text](<Screenshot (55).png>) 
-![alt text](<Screenshot (56).png>) 
-![alt text](<Screenshot (57).png>) 
-![alt text](<Screenshot (58).png>) 
-![alt text](<Screenshot (59).png>) 
-![alt text](<Screenshot (60).png>) 
-![alt text](<Screenshot (63).png>) 
+![alt text](<./images/Screenshot (52).png>) 
+![alt text](<./images/Screenshot (55).png>) 
+![alt text](<./images/Screenshot (56).png>) 
+![alt text](<./images/Screenshot (57).png>) 
+![alt text](<./images/Screenshot (58).png>) 
+![alt text](<./images/Screenshot (59).png>) 
+![alt text](<./images/Screenshot (60).png>) 
+![alt text](<./images/Screenshot (63).png>) 
 
 Q(trans(K))/root(dist) - scaled dot product
-![alt text](<Screenshot (67).png>) 
-![alt text](<Screenshot (68).png>) 
-![alt text](<Screenshot (69).png>) 
-![alt text](<Screenshot (70).png>) 
-![alt text](<Screenshot (71).png>) 
-![alt text](<Screenshot (72).png>) 
+![alt text](<./images/Screenshot (67).png>) 
+![alt text](<./images/Screenshot (68).png>) 
+![alt text](<./images/Screenshot (69).png>) 
+![alt text](<./images/Screenshot (70).png>) 
+![alt text](<./images/Screenshot (71).png>) 
+![alt text](<./images/Screenshot (72).png>) 
 ### Transformer Model
 
 neural netwrok might just predict new word but it doesnt understand context
 
-![alt text](<Screenshot (74).png>) 
-![alt text](<Screenshot (76).png>) 
-![alt text](<Screenshot (77).png>) 
-![alt text](<Screenshot (78).png>) 
-![alt text](<Screenshot (79).png>) 
-![alt text](<Screenshot (81).png>) 
-![alt text](<Screenshot (82).png>)
+![alt text](<./images/Screenshot (74).png>) 
+![alt text](<./images/Screenshot (76).png>) 
+![alt text](<./images/Screenshot (77).png>) 
+![alt text](<./images/Screenshot (78).png>) 
+![alt text](<./images/Screenshot (79).png>) 
+![alt text](<./images/Screenshot (81).png>) 
+![alt text](<./images/Screenshot (82).png>)
 
 
 How to convert vectors to language
-![alt text](image-5.png)
+![alt text](./images/image-5.png)
