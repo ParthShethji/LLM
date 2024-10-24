@@ -69,11 +69,13 @@ instead of using one embedding, we create multiple embeddings using a linear tra
 ![alt text](<Screenshot (83).png>)
 ![alt text](<Screenshot (15).png>)
 ![alt text](<Screenshot (16).png>)
-![alt text](<Screenshot (18).png>) 
+Distance is nothing but similarity between them
 ![alt text](<Screenshot (21).png>) 
 ![alt text](<Screenshot (22).png>) 
 ![alt text](<Screenshot (24).png>) 
 ![alt text](<Screenshot (25).png>) 
+Everything in real world is done using scaled dot product
+
 ![alt text](<Screenshot (30).png>) 
 ![alt text](<Screenshot (31).png>) 
 ![alt text](<Screenshot (33).png>) 
@@ -85,9 +87,16 @@ instead of using one embedding, we create multiple embeddings using a linear tra
 
 `We take a line from apple to orange then I move apple towards orange for 43. Because apple is 43% of orange in our equation`
 
+### Keys Values and Queries as linear Transformations
 ![alt text](<Screenshot (45).png>) 
 ![alt text](<Screenshot (46).png>) 
-`Queries: Used to find the best embedding`
+`Queries:  the word (or token) for which we want to find relevant information from other words. here fruit`
+
+`Keys:  These represent the other words (or tokens) that the model will use to provide relevant information. here phone`
+
+the above can be used interchangebly
+
+`Values: Values are the actual information that will be retrieved based on the similarity between the query and the keys.` after applying values matrix to the best linearly transformed image it helps us find next wordz
 
 ![alt text](<Screenshot (48).png>)
 ![alt text](<Screenshot (49).png>) 
@@ -102,13 +111,18 @@ instead of using one embedding, we create multiple embeddings using a linear tra
 ![alt text](<Screenshot (59).png>) 
 ![alt text](<Screenshot (60).png>) 
 ![alt text](<Screenshot (63).png>) 
+
+Q(trans(K))/root(dist) - scaled dot product
 ![alt text](<Screenshot (67).png>) 
 ![alt text](<Screenshot (68).png>) 
 ![alt text](<Screenshot (69).png>) 
 ![alt text](<Screenshot (70).png>) 
 ![alt text](<Screenshot (71).png>) 
 ![alt text](<Screenshot (72).png>) 
-![alt text](<Screenshot (73).png>) 
+### Transformer Model
+
+neural netwrok might just predict new word but it doesnt understand context
+
 ![alt text](<Screenshot (74).png>) 
 ![alt text](<Screenshot (76).png>) 
 ![alt text](<Screenshot (77).png>) 
@@ -116,4 +130,7 @@ instead of using one embedding, we create multiple embeddings using a linear tra
 ![alt text](<Screenshot (79).png>) 
 ![alt text](<Screenshot (81).png>) 
 ![alt text](<Screenshot (82).png>)
->>>>>>> 1d4201450a075c8e1094da17a6ffe6e7cca150fa
+
+
+How to convert vectors to language
+![alt text](image-5.png)
