@@ -5,7 +5,7 @@ from sklearn.decomposition import PCA
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.cluster import KMeans
 import cohere
-co = cohere.client("pu3h1qyEXfXLNUW5tvYnQhABIRH26kkaskMzEmss")
+co = cohere.client("")
 
 df_orig = pd.read_csv('https://raw.githubusercontent.com/cohere-ai/notebooks/main/notebooks/data/atis_intents_train.csv', names=['intent','query'])
 sample_classes = ['atis_airfare', 'atis_airline', 'atis_ground_service']
